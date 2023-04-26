@@ -95,5 +95,9 @@ form {
 			outline: none;
 			outline: 2px dashed rgb(78, 78, 78);
 		}
+
+		&:disabled {
+			filter: brightness(0.7);
+		}
 	}
 }
