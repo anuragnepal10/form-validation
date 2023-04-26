@@ -1,0 +1,95 @@
+@use '../abstracts/' as *;
+
+form {
+	background-color: $clr-neutral;
+	border-radius: 0.5rem;
+	box-shadow: $shd-1;
+	width: min(500px, 90vw);
+	padding: 1.5rem 2rem;
+	@include align-column(1rem);
+
+	.on-submit {
+		border: 1px solid $clr-success;
+		border-radius: 0.5rem;
+		background-color: rgba($color: $clr-success, $alpha: 0.1);
+		color: $clr-success;
+		padding: 0.25rem 0.5rem;
+		font-size: $fs-small;
+		display: none;
+	}
+
+	.on-submit.active {
+		display: block;
+	}
+
+	.form-control {
+		@include align-column(0.25rem);
+
+		label {
+			font-weight: $fw-bold;
+		}
+
+		input,
+		select {
+			padding: 0.5rem;
+			border-radius: 0.5rem;
+			border: 2px solid $clr-balance;
+
+			&:focus {
+				outline: none;
+				border-color: $clr-primary;
+			}
+		}
+
+		.error {
+			color: $clr-danger;
+			font-size: $fs-small;
+		}
+
+		select {
+			cursor: pointer;
+		}
+
+		.terms {
+			display: flex;
+			gap: 1rem;
+			align-items: center;
+
+			label {
+				font-weight: $fw-regular;
+				font-size: $fs-small;
+			}
+
+			input {
+				cursor: pointer;
+				height: 2rem;
+				width: 2rem;
+				accent-color: $clr-primary;
+			}
+		}
+	}
+
+	button {
+		cursor: pointer;
+		width: fit-content;
+		margin-inline: auto;
+		padding: 0.5rem 1rem;
+		border: none;
+		border-radius: 0.5rem;
+		color: $clr-neutral;
+		background-color: $clr-primary;
+
+		@include hover {
+			filter: brightness(1.2);
+		}
+
+		&:active {
+			scale: 0.98;
+		}
+
+		&:focus {
+			outline: none;
+			outline: 2px dashed rgb(78, 78, 78);
+		}
+	}
+}

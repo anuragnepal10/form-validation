@@ -1,0 +1,18 @@
+@mixin align-column($gap) {
+	display: flex;
+	flex-direction: column;
+	gap: $gap;
+}
+
+@mixin align-center {
+	display: grid;
+	place-content: center;
+}
+
+@mixin hover {
+	&:hover {
+		@media (hover: hover) {
+			@content;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+
+#root {
+	@include align-center;
+}
+
+body {
+	background: $gra-bg;
+	color: $clr-inverted;
+	font-family: $ff-primary;
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+// colors
+$clr-primary: rgb(45, 66, 255);
+$clr-danger: rgb(192, 34, 34);
+$clr-success: green;
+$clr-neutral: #fff;
+$clr-inverted: #111;
+$clr-balance: #ddd;
+
+// gradients
+$gra-bg: linear-gradient(
+	135deg,
+	rgba(176, 0, 172, 1) 0%,
+	rgba(0, 9, 170, 1) 100%
+);
+
+// shadow
+$shd-1: rgba(0, 0, 0, 0.3) 0px 7px 29px 0px;
+
+// fonts
+$ff-primary: 'Source Sans Pro', sans-serif;
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 600;
+
+$fs-body: 1rem;
+$fs-small: 0.875rem;
+$fs-large: 1.125rem;

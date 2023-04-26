@@ -1,6 +1,11 @@
 const Form = () => {
 	return (
 		<form noValidate>
+			{/* ON SUBMIT */}
+			<p className="on-submit">
+				Form has been submitted successfully. Refresh the page to submit again.
+			</p>
+
 			{/* EMAIL */}
 			<div className="form-control">
 				<label htmlFor="email">Email: </label>
@@ -34,11 +39,16 @@ const Form = () => {
 
 			{/* TERMS */}
 			<div className="form-control terms">
-				<input type="checkbox" name="terms" required />
-				<label htmlFor="terms">
-					Agree to terms? By checking this box, you confirm that you've read and
-					accept our terms and conditions.
-				</label>
+				<div className="terms">
+					<input type="checkbox" name="terms" />
+					<label htmlFor="terms">
+						Agree to terms? By checking this box, you confirm that you've read
+						and accept our terms and conditions.
+					</label>
+				</div>
+				<p className="error">
+					You must agree to the terms and conditions to proceed.
+				</p>
 			</div>
 
 			{/* BUTTONS */}
