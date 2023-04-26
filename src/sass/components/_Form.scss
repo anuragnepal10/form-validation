@@ -8,6 +8,10 @@ form {
 	padding: 1.5rem 2rem;
 	@include align-column(1rem);
 
+	@include mq-phone {
+		overflow-y: scroll;
+	}
+
 	.on-submit {
 		border: 1px solid $clr-success;
 		border-radius: 0.5rem;
